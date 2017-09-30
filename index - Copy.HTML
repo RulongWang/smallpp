@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>GLCM China Innovation Idea Voting</title>
+  <title>2017 GLCM FinLab Innovation Competition</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -18,7 +18,10 @@
   .desc{
   
   }
-  
+  .jumcolor{
+  	background-color:#FF0000;
+  	color:#FFFFFF;
+  }
   .topspace{
   	margin-top:10px;
   }
@@ -29,13 +32,41 @@
   
 <div class="container-fluid ">
 
-<div class="jumbotron topspace">
-    <h1>Voting for GLCM Innovation</h1> 
-    <p>To make GLCM better</p> 
+<div class="jumbotron topspace jumcolor">
+    <h1>2017 GLCM FinLab Innovation Competition</h1> 
+    
+</div>
+
+<!-- Vote modal -->
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title">Your ID is required</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+					<form>
+          <div class="form-group">
+            <label for="voteid" class="form-control-label">Your ID:</label>
+            <input type="text" class="form-control" id="voteid">
+          </div>
+          
+        </form>     
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" onClick="window.location.href='result.html'">Vote</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
+</div>
 <div class="row item">
   <div class="col-md-12 col-sm-12 " >
-  GLCM Innovation Voting List  	
+  	<p>Description </p>
   </div>
  
 </div>
@@ -49,13 +80,22 @@
     
     <div class="desc col-md-4 col-sm-4">
     	<p>
-    		Description of your team your idea and your slogan
+    		Description of your team your idea
+    		Description of your team your idea
+    		Description of your team your idea
+    		Description of your team your idea
+    		Description of your team your idea
+    		Description of your team your idea
+    		Description of your team your idea
+    		Description of your team your idea
+    		Description of your team your idea
+    		
       </p>
     	
     </div>
     
     <div class="col-md-4 col-sm-4 pull-right ">
-       <button type="button " class="pull-right btn btn-success "  onClick="alert('test');">Vote</button>
+       <button type="button " class="pull-right btn btn-success "  onClick="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Vote</button>
    </div>	
     	  	
   </div> 
@@ -71,7 +111,7 @@
     
     <div class="desc col-md-4 col-sm-4">
     	<p>
-    		Description of your team your idea and your slogan
+    		Description of your team your idea
       </p>
     	
     </div>
@@ -93,7 +133,7 @@
     
     <div class="desc col-md-4 col-sm-4">
     	<p>
-    		Description of your team your idea and your slogan
+    		Description of your team your idea
       </p>
     	
     </div>
@@ -115,7 +155,7 @@
     
     <div class="desc col-md-4 col-sm-4">
     	<p>
-    		Description of your team your idea and your slogan
+    		Description of your team your idea
       </p>
     	
     </div>
@@ -137,7 +177,7 @@
     
     <div class="desc col-md-4 col-sm-4">
     	<p>
-    		Description of your team your idea and your slogan
+    		Description of your team your idea
       </p>
     	
     </div>
@@ -150,33 +190,7 @@
  
 </div><!-- end of row-->
                 
- <div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-  aria-valuemin="0" aria-valuemax="100" style="width:40%">
-    40% Complete (success)
-  </div>
-</div>
 
-<div class="progress">
-  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
-  aria-valuemin="0" aria-valuemax="100" style="width:50%">
-    50% Complete (info)
-  </div>
-</div>
-
-<div class="progress">
-  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
-  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-    60% Complete (warning)
-  </div>
-</div>
-
-<div class="progress">
-  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
-  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-    70% Complete (danger)
-  </div>
-</div>
 	
 </div>
 
